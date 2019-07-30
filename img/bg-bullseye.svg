@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+    <g fill="none" fill-rule="evenodd" transform="translate(-360 -295)">
+        <circle cx="961" cy="647" r="40" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="74.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="111.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961" cy="647" r="146" stroke="#FFF" opacity=".15"/>
+        <circle cx="961" cy="647" r="186" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="241.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="304.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="398.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961.5" cy="647.5" r="509.5" stroke="#FFF" opacity=".15"/>
+        <circle cx="961" cy="647" r="647" stroke="#FFF" opacity=".15"/>
+        <path stroke="#FFF" stroke-linecap="square" d="M0 645.5h1920"/>
+        <path fill="#FFF" d="M957 642h7v7h-7z"/>
+    </g>
+</svg>
