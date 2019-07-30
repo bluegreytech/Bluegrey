@@ -22,7 +22,7 @@ error_reporting(0);
         define('USERPASSWORD', 'Hiren@1234');
         define('SETFROM', 'hiren@nilayinfotech.co.in');
         define('SETTO', 'hiren@nilayinfotech.co.in');
-        define('BASE_URL', 'https://bluegreytech.com/');
+        define('BASE_URL', 'http://localhost/Bluegrey/');
     }else if($webstatus=="local"){
         define('DBHOST', 'localhost');
         define('DBUSER', 'root');
@@ -33,7 +33,7 @@ error_reporting(0);
         define('USERPASSWORD', 'Hiren@1234');
         define('SETFROM', 'hiren@nilayinfotech.co.in');
         define('SETTO', 'hiren@nilayinfotech.co.in');
-        define('BASE_URL', 'https://localhost/');
+        define('BASE_URL', 'http://localhost/Bluegrey/');
       
     }
 

@@ -1,5 +1,6 @@
 <?php
      include('admin/connection.php');
+     //echo BASE_URL;
      if(isset($_POST['quote']))
      {
         $UserName=$_POST['UserName'];
@@ -100,16 +101,16 @@
 	<nav class="nav ">
 		<div class="container">
 			<div class="nav__logo">
-				<a class="logo logo-white" href="index"></a>
+				<a class="logo logo-white" href="<?php echo BASE_URL;?>"></a>
             </div>
 	<div class="nav__wrapper">
 				
     <ul class="nav__list">
         <li class="menu-item">
-                <a href="index" class="menu-item-link">Home</a>
+                <a href="<?php echo BASE_URL;?>" class="menu-item-link">Home</a>
             </li>
             <li class="menu-item has-dropdown">
-                <a href="#" class="menu-item-link">What We Do</a>
+                <a href="<?php echo BASE_URL;?>" class="menu-item-link">What We Do</a>
                 <div class="sub-menu-wrapper">
                     <div class="sub-menu-container">
                         <div class="article-container">
