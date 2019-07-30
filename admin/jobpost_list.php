@@ -4,7 +4,7 @@
     if(isset($_GET['JobPostId']))
     {
         $JobPostId=$_GET['JobPostId'];
-        $querydelete=mysql_query("delete from tbljobpost where JobPostId='$JobPostId' ORDER BY JobPostId DESC")or die(mysql_error());
+        $querydelete=mysqli_query($con,"delete from tbljobpost where JobPostId='$JobPostId' ORDER BY JobPostId DESC")or die(mysql_error());
         if($querydelete)
         {
             $_SESSION['check']=2;
@@ -57,8 +57,8 @@
                             <?php
                                 $i=1;
                                 $select="select * from tbljobpost";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>
@@ -83,7 +83,7 @@
                                             ?>
                                     </td>
                                     <td>
-                                        <a href="jobpost_edit.php?JobPostId=<?php echo $r1['JobPostId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                        <a href="jobpost_edit?JobPostId=<?php echo $r1['JobPostId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                         <a href="jobpost_list.php?JobPostId=<?php echo $r1['JobPostId']; ?>"><i class="ficon icon-bin"></i></a>
                                     </td>  
                                 </tr>      

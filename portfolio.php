@@ -69,8 +69,8 @@ include('admin/connection.php');
              <!--Select Loop Start-->
             <?php
                 $select="SELECT * from tblportfolio where IsActive='1' ORDER BY PortfolioId DESC";
-                $row=mysql_query($select,$con);
-                while($r1=mysql_fetch_array($row))
+                $row=mysqli_query($con,$select);
+                while($r1=mysqli_fetch_array($row))
                 {
             ?>
             <div class="col-lg-4" style="margin-top:25px;">

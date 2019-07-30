@@ -5,12 +5,12 @@
         $JobTitle=$_POST['JobTitle'];
         $JobDescription=$_POST['JobDescription'];
         $IsActive=$_POST['IsActive'];
-        $result=mysql_query("insert into tbljobpost(JobTitle,JobDescription,IsActive)values('$JobTitle','$JobDescription','$IsActive')");
+        $result=mysqli_query($con,"insert into tbljobpost(JobTitle,JobDescription,IsActive)values('$JobTitle','$JobDescription','$IsActive')");
         if($result)
         {
 							$_SESSION['check']=1;
 							echo '<script>
-							 			 window.location="jobpost_list.php"
+							 			 window.location="jobpost_list"
 										 </script>';
 				}
 				else

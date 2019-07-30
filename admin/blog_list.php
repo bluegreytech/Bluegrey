@@ -5,23 +5,23 @@
     if(isset($_GET['BlogId']))
     {
         $BlogId=$_GET['BlogId'];
-        $queryselect=mysql_query("select * from tblblogs where BlogId='$BlogId'")or die(mysql_error());
-        $r1=mysql_fetch_array($queryselect);
+        $queryselect=mysqli_query($con,"select * from tblblogs where BlogId='$BlogId'")or die(mysql_error());
+        $r1=mysqli_fetch_array($queryselect);
         $BlogImage=$r1['BlogImage'];
-        $querydelete=mysql_query("delete from tblblogs where BlogId='$BlogId'")or die(mysql_error());
+        $querydelete=mysqli_query($con,"delete from tblblogs where BlogId='$BlogId'")or die(mysql_error());
         unlink("upload/BlogImages/".$r1['BlogImage']);
         if($querydelete)
         {
             $_SESSION['check']=2;
             echo '<script>
-            window.location="blog_list.php"
+            window.location="blog_list"
            </script>';
         }
         else
         {
             $_SESSION['check']=4;
             echo '<script>
-            window.location="blog_list.php"
+            window.location="blog_list"
            </script>';
         }	
     }
@@ -70,8 +70,8 @@
                             <?php
                                 $i=1;
                                 $select="select * from tblblogs ORDER BY BlogId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>
@@ -107,7 +107,7 @@
                                             ?>
                                     </td>
                                     <td>
-                                    <a href="edit_blog.php?BlogId=<?php echo $r1['BlogId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                    <a href="edit_blog?BlogId=<?php echo $r1['BlogId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                     <a href="blog_list.php?BlogId=<?php echo $r1['BlogId']; ?>"><i class="ficon icon-bin"></i></a>
                                     </td>  
                                 </tr>      

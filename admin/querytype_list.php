@@ -4,7 +4,7 @@
     if(isset($_GET['QueryTypeId']))
     {
         $QueryTypeId=$_GET['QueryTypeId'];
-        $querydelete=mysql_query("delete from tblquerytype where QueryTypeId='$QueryTypeId'")or die(mysql_error());
+        $querydelete=mysqli_query($con,"delete from tblquerytype where QueryTypeId='$QueryTypeId'")or die(mysql_error());
         if($querydelete)
         {
             $_SESSION['check']=2;
@@ -56,8 +56,8 @@
                             <?php
                                 $i=1;
                                 $select="select * from tblquerytype ORDER BY QueryTypeId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>
@@ -75,7 +75,7 @@
                                             ?>
                                     </td>
                                     <td>
-                                        <a href="querytype_edit.php?QueryTypeId=<?php echo $r1['QueryTypeId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                        <a href="querytype_edit?QueryTypeId=<?php echo $r1['QueryTypeId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                         <a href="querytype_list.php?QueryTypeId=<?php echo $r1['QueryTypeId']; ?>"><i class="ficon icon-bin"></i></a>
                                     </td>  
                                 </tr>      

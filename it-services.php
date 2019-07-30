@@ -69,7 +69,7 @@
                         <p class="offer-content-description">
                             MSP solutions enable you to deliver high quality, secure services and automate your most frequent IT tasks.                         
                         </p>
-            <a href="msp-services.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+            <a href="msp-services" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                         
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <p class="offer-content-description">
                         POS (Point of sale) solutions for a seamless experience where your stores and customers meet. 
                         </p>
-            <a href="workstations-and-point-of-sale-systems.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+            <a href="workstations-and-point-of-sale-systems" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -89,7 +89,7 @@
                         <h3 class="offer-content-title">Employee productivity </h3>
                         <p class="offer-content-description">
                             We help you assess your company as well as develop effective programs for promoting improvements.                    </p>
-              <a href="employee-productivity.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+              <a href="employee-productivity" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -97,7 +97,7 @@
                     <div class="offer-content">
                         <h3 class="offer-content-title">Security & Monitoring</h3>
                         <p class="offer-content-description">Thwart all threats and control your organization’s security with state of the art security solutions. </p>
-            <a href="security-and-monitoring.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+            <a href="security-and-monitoring" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -106,7 +106,7 @@
                         <h3 class="offer-content-title">Network Infrastructure</h3>
                         <p class="offer-content-description">
                             Need help setting up your IT Network? Our experienced team is here to help!</p>
-              <a href="network-infrastructure.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+              <a href="network-infrastructure" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -116,8 +116,8 @@
                         <p class="offer-content-description">
                           Our services give you the freedom to protect stored, static and moving data on the cloud.
                         </p>
-            <a href="data-protection-and-migration.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
-                    </div>
+            <a href="data-protection-and-migration" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+                    </div
                 </div>
             </div>
 

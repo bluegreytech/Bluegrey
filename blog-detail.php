@@ -5,8 +5,8 @@ if(isset($_GET['BlogTitle']))
 {    
 	$BlogTitle= str_replace('-',' ',$_GET['BlogTitle']);
     //$BlogTitle=$_GET['BlogTitle'];
-    $selectmeta=mysql_query("SELECT * from tblblogs where IsActive='1' AND BlogTitle='$BlogTitle'");
-    $blogmetaData=mysql_fetch_assoc($selectmeta);
+    $selectmeta=mysqli_query($con,"SELECT * from tblblogs where IsActive='1' AND BlogTitle='$BlogTitle'");
+    $blogmetaData=mysqli_fetch_assoc($selectmeta);
 }
 ?>
 
@@ -49,14 +49,14 @@ if(isset($_GET['BlogTitle']))
 
 
 <?php 
-//include('admin/connection.php');
+//include('admin/connection');
 
 if(isset($_GET['BlogTitle']))
 {    
 	$BlogTitle= str_replace('-',' ',$_GET['BlogTitle']);
     //$BlogTitle=$_GET['BlogTitle'];
-    $select=mysql_query("SELECT * from tblblogs where IsActive='1' AND BlogTitle='$BlogTitle'");
-    $blogData=mysql_fetch_assoc($select);
+    $select=mysqli_query($con,"SELECT * from tblblogs where IsActive='1' AND BlogTitle='$BlogTitle'");
+    $blogData=mysqli_fetch_assoc($select);
 }
 ?>
 
@@ -92,11 +92,11 @@ if(isset($_GET['BlogTitle']))
                                 <!--Item 1 Start-->
                            <?php
                                 $select="SELECT * from tblblogs where BlogTitle!='$BlogTitle' AND IsActive='1' ORDER BY BlogId DESC LIMIT 3";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
-                                 <a href="blog-detail.php?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>">
+                                 <a href="blog-detail?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>">
                                     <div class="bi_img_detail">
                                     <img src="admin/upload/BlogImages/<?php echo $r1['BlogImage']; ?>" alt="<?php echo $r1['BlogTitle']?>">
                                         <p> <?php echo $r1['BlogTitle']?></p>

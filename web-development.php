@@ -184,7 +184,7 @@
                 Get Free Consultation from Best Website Development Company 
             </h2>
         </div>
-        <a class="button--white-green button-vantage-talk" href="contact-us.php">Contact Us Today!</a>
+        <a class="button--white-green button-vantage-talk" href="contact-us">Contact Us Today!</a>
     </section>
     <section class="capabilities">
         <div class="container">

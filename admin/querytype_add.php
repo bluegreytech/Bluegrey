@@ -4,12 +4,12 @@
     {
         $QueryType=$_POST['QueryType'];
         $IsActive=$_POST['IsActive'];
-        $result=mysql_query("insert into tblquerytype(QueryType,IsActive)values('$QueryType','$IsActive')");
+        $result=mysqli_query($con,"insert into tblquerytype(QueryType,IsActive)values('$QueryType','$IsActive')");
         if($result)
         {
 							$_SESSION['check']=1;
 							echo '<script>
-							 			 window.location="querytype_list.php"
+							 			 window.location="querytype_list"
 										 </script>';
 				}
 				else

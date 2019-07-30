@@ -74,11 +74,11 @@
                                   </div>
 
                                   <div class="clients__text">
-                                      <a href="web-development.php">
+                                      <a href="web-development">
                                       <h3 class="clients__title">Web Development</h3>
                                       </a>
                                       <p class="clients__description">Our Team of developers is always prepared to assist our clients to choose the correct platform for their business as per the goals of their business. </p>
-                                      <a href="web-development.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="web-development" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -93,7 +93,7 @@
                                       <h3 class="clients__title">Web Design</h3>
                                       </a>
                                       <p class="clients__description">Aesthetic designs that attract the viewers attention are our forte. Our talented Design Team create the most eye-catching and soothing designs that amplify the nature of your brand.</p>
-                                      <a href="web-design.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="web-design" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -108,7 +108,7 @@
                                       <h3 class="clients__title">Mobile App Development</h3>
                                       </a>
                                       <p class="clients__description">We provide the most innovative Mobile app development solutions for a better business experience. We offer our services on all major platforms including iOS, Android, Windows, etc.  </p>
-                                      <a href="mobile-application.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="mobile-application" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -125,7 +125,7 @@
                                       <p class="clients__description">Our Digital Marketing team covers a wide range of marketing activities such as social media marketing, email marketing, SEO, PPC and mobile app marketing. 
 
                                       </p>
-                                      <a href="digital-marketing.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="digital-marketing" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>

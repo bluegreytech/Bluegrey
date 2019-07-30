@@ -3,8 +3,8 @@
 		if(isset($_GET['PortfolioId']))
     {
         $PortfolioId=$_GET['PortfolioId'];
-        $getData=mysql_query("select * from tblportfolio where PortfolioId='$PortfolioId'");
-        $imageData=mysql_fetch_assoc($getData);
+        $getData=mysqli_query($con,"select * from tblportfolio where PortfolioId='$PortfolioId'");
+        $imageData=mysqli_fetch_assoc($getData);
         $Image=$imageData['Image'];
         $IsActive=$imageData['IsActive'];
 
@@ -30,7 +30,7 @@
             {
 									$_SESSION['check']=3;
 									echo '<script type="text/javascript">
-									window.location="portfolio_list.php"
+									window.location="portfolio_list"
 									</script>';
             }
 						else

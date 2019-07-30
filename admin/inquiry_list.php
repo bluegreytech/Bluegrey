@@ -39,8 +39,8 @@
                                  FROM tblinquiry as inq
                                  JOIN tblcountry co ON inq.CountryId = co.CountryId 
                                  JOIN tblintrestedtype intre ON inq.IntrestedTypeId = intre.IntrestedTypeId ORDER BY InquiryId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>

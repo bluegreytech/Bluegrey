@@ -47,8 +47,8 @@
                             <?php
                                 $i=1;
                                 $select="select * from tblcareer ORDER BY CareerId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>

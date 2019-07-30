@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://bluegreytech.com/amaps.xml
+Sitemap: https://bluegreytech.com/stmap.xml

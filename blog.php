@@ -63,13 +63,13 @@ include('admin/connection.php');
                              <!--Select Loop Start-->
             <?php
                 $select="SELECT * from tblblogs where IsActive='1' ORDER BY BlogId DESC";
-                $row=mysql_query($select,$con);
-                while($r1=mysql_fetch_array($row))
+                $row=mysqli_query($con,$select);
+                while($r1=mysqli_fetch_array($row))
                 {
             ?>
                     <!--Blog 1-->
                     <div class="blog_item">
-                        <a href="blog-detail.php?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>" target="_blank">
+                        <a href="blog-detail?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>" target="_blank">
                             <div class="bi_img">
                                     <img src="admin/upload/BlogImages/<?php echo $r1['BlogImage']; ?>" alt="<?php echo $r1['BlogTitle']?>">
                             </div>

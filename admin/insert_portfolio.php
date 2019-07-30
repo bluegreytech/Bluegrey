@@ -9,12 +9,12 @@
             $path="upload/PortfolioImages/$Image";
             move_uploaded_file($p1,$path);
             $IsActive=$_POST['IsActive'];
-            $result=mysql_query("insert into tblportfolio(Title,Image,IsActive)values('$Title','$Image','$IsActive')");
+            $result=mysqli_query($con,"insert into tblportfolio(Title,Image,IsActive)values('$Title','$Image','$IsActive')");
             if($result)
             {
 							  $_SESSION['check']=1;
 								echo '<script type="text/javascript">
-								window.location="portfolio_list.php"
+								window.location="portfolio_list"
 								</script>';
             }
 						else

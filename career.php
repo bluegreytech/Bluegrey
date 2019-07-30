@@ -102,7 +102,7 @@
                                 {
                                     include('admin/connection.php');
                                
-                                    $result=mysql_query("INSERT INTO tblcareer(UserName,EmailAddress,MobileNumber,Position,UserResume,RemarkMessage)VALUES('$UserName','$EmailAddress','$MobileNumber','$Position','$UserResume','$RemarkMessage')")or die(mysql_error());
+                                    $result=mysqli_query($con,"INSERT INTO tblcareer(UserName,EmailAddress,MobileNumber,Position,UserResume,RemarkMessage)VALUES('$UserName','$EmailAddress','$MobileNumber','$Position','$UserResume','$RemarkMessage')")or die(mysql_error());
                                     if($result)
                                     { 
                                         $_SESSION['check']=1; 
@@ -180,8 +180,8 @@
                 <!--Item1-->
                     <?php
                         include('admin/connection.php');
-                        $row=mysql_query("SELECT * from tbljobpost where IsActive='1' ORDER BY JobPostId DESC");
-                        while($r1=mysql_fetch_array($row))
+                        $row=mysqli_query($con,"SELECT * from tbljobpost where IsActive='1' ORDER BY JobPostId DESC");
+                        while($r1=mysqli_fetch_array($row))
                         {
                     ?>
                     <div class="dev-description">
@@ -228,8 +228,8 @@
                                                 <select class="form__select" name="JobPostId" required>
                                                 <option value="">I am interested in</option>
                                                 <?php
-                                                $select1=mysql_query("select * from tbljobpost where IsActive='1'");
-                                                while($r1=mysql_fetch_array($select1))
+                                                $select1=mysqli_query($con,"select * from tbljobpost where IsActive='1'");
+                                                while($r1=mysqli_fetch_array($select1))
                                                 {
                                                 ?>
                                                 <option value="<?php echo $r1['JobTitle'];?>"><?php echo $r1['JobTitle'];?></option>					

@@ -4,7 +4,7 @@
     if(isset($_GET['IntrestedTypeId']))
     {
         $IntrestedTypeId=$_GET['IntrestedTypeId'];
-        $querydelete=mysql_query("delete from tblintrestedtype where IntrestedTypeId='$IntrestedTypeId'")or die(mysql_error());
+        $querydelete=mysqli_query($con,"delete from tblintrestedtype where IntrestedTypeId='$IntrestedTypeId'")or die(mysql_error());
         if($querydelete)
         {
             $_SESSION['check']=2;
@@ -61,8 +61,8 @@ $(document).ready(function() {
                             <?php
                                 $i=1;
                                 $select="select * from tblintrestedtype ORDER BY IntrestedTypeId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>
@@ -80,7 +80,7 @@ $(document).ready(function() {
                                             ?>
                                     </td>
                                     <td>
-                                        <a href="intrestedtype_edit.php?IntrestedTypeId=<?php echo $r1['IntrestedTypeId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                        <a href="intrestedtype_edit?IntrestedTypeId=<?php echo $r1['IntrestedTypeId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                         <a href="intrestedtype_list.php?IntrestedTypeId=<?php echo $r1['IntrestedTypeId']; ?>"><i class="ficon icon-bin"></i></a>
                                     </td>  
                                 </tr>      

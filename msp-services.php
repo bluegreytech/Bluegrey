@@ -3,10 +3,10 @@
 
 <head>
 
-<title>MSP(managed service provider) - Top Managed Service Providers</title>
- <meta name="description" content="Looking for a top managed service providers? Our best managed service provider can remotely manage your organization or company’s IT infrastructure and end-user systems on a proactive basis."/>
+<title>Managed Service Providers in USA - Top IT Managed Service Providers</title>
+ <meta name="description" content="Looking for a top managed service provider los angeles? Our best msp service provider can remotely manage your organization or company’s IT infrastructure and end-user systems on a proactive basis."/>
  
- <link rel="canonical" href="">  
+ <link rel="canonical" href="https://www.bluegreytech.com/msp-services.php">  
 	
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,14 +35,14 @@
 <?php include 'menu.php';?>
 
     
-<section class="hero hero--600" style="background-image:url(img/services/msp-services.jpg);" alt="top cloud managed service providers">
+<section class="hero hero--600" style="background-image:url(img/services/msp-services.jpg);" alt="managed service providers nyc">
     <div class="container">
         <div class="hero__content">
             <h2 class="title title--uppercase">
                 <span class="title__preheader title__preheader--tag">IT Services</span>
                Largest Managed Service Providers     
             </h2>
-            <p class="hero__lead">MSP (Managed Service Provider) is a specialized service we provide to organizations for improving productivity including network support and specialized applications. 
+            <p class="hero__lead">MSP services (Managed Service Provider) is a specialized service we provide to organizations for improving productivity including network support and specialized applications. Our best managed service providers is a computing framework platform for organizations to remotely manage their customers. We can ensure that you will have the right solution.
             </p>
         </div>
     </div>
@@ -51,16 +51,16 @@
 <section class="service-why">
     <div class="container">
         <h1 class="service-why__title service-why__title--team-extension">
-            Top Managed Service Providers
+            Top IT Managed Service Providers
         </h1>
         <p class="service-why__description">
-          MSP is a computing framework platform for organizations to remotely manage their customers. We can ensure that you will have the right solution to meet all of your business requirements. 
+         Bluegrey technologies Managed Services cover the maintenance of your technology for a set monthly expense. Our MSP services monitors check the health of your systems, and alerts you when something goes wrong. Our managed service provider companies normally includes applying all critical patches, fixes, and updates to your PC frameworks consequently. We are providing preventive maintenance for your PCs and networks, and in many cases our MSP (managed network services providers) works remotely, so you don't have to wait for them to come to your office every time. 
         </p>
 
         
         <div id="services" class="offers-tabcontent active">
                 <div class="tabcontent-item">
-                    <i><img src="img/service-icon/surveillance.png" alt="managed service provider solutions"></i>
+                    <i><img src="img/service-icon/surveillance.png" alt="managed service provider san francisco"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title">Security Surveillance </h3>
                         <p class="offer-content-description">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="tabcontent-item">
-                     <i><img src="img/service-icon/mobile-device.png"></i>
+                     <i><img src="img/service-icon/mobile-device.png" alt="managed service provider companies"></i>
                                         <div class="offer-content">
                                             <h3 class="offer-content-title">
                                                 Mobile Device Management                        
@@ -107,7 +107,7 @@
                                         </div>
                                     </div>
                                     <div class="tabcontent-item">
-                                        <i><img src="img/service-icon/line-based.png"></i>
+                                        <i><img src="img/service-icon/line-based.png" alt="top cloud managed service providers"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title">
                             Land-Based Line Access                     
@@ -119,7 +119,7 @@
 
                 </div>
                 <div class="tabcontent-item">
-                    <i><img src="img/service-icon/video-room.png"></i>
+                    <i><img src="img/service-icon/video-room.png" alt="IT msp companies"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title">Audio Video/Conference Room Support</h3>
                         <p class="offer-content-description">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <div class="tabcontent-item">
-                    <i><img src="img/service-icon/video-conference.png"></i>
+                    <i><img src="img/service-icon/video-conference.png" alt="msp provider services"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title">Video Conference Support</h3>
                         <p class="offer-content-description">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="tabcontent-item">
-                    <i><img src="img/service-icon/website-support.png"></i>
+                    <i><img src="img/service-icon/website-support.png" alt="managed network services providers"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title">DNS/SSL/Web site support</h3>
                         <p class="offer-content-description">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div class="tabcontent-item">
-                    <i><img src="img/service-icon/email-security.png"></i>
+                    <i><img src="img/service-icon/email-security.png" alt="managed service provider business model"></i>
                     <div class="offer-content">
                         <h3 class="offer-content-title"> Email Security Tool management</h3>
                         <p class="offer-content-description">
@@ -162,7 +162,7 @@
     <section class="service-cta service-cta--team-extension">
         <div class="service-cta__text-area service-cta__text-area--team-extension">
             <h2 class="service-cta__white">
-                You Have A Vision. We Have A Way To Get You There.
+                Save time and money with MSP Partners
             </h2>
         </div>
         <a class="button--white-green button-vantage-talk" href="#form-wrap">Talk to us</a>

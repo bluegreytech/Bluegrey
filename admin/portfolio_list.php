@@ -4,10 +4,10 @@
         if(isset($_GET['PortfolioId']))
         {
             $PortfolioId=$_GET['PortfolioId'];
-            $queryselect=mysql_query("select * from tblportfolio where PortfolioId='$PortfolioId'")or die(mysql_error());
-            $r1=mysql_fetch_array($queryselect);
+            $queryselect=mysqli_query($con,"select * from tblportfolio where PortfolioId='$PortfolioId'")or die(mysql_error());
+            $r1=mysqli_fetch_array($queryselect);
             
-            $querydelete=mysql_query("delete from tblportfolio where PortfolioId='$PortfolioId'")or die(mysql_error());
+            $querydelete=mysqli_query($con,"delete from tblportfolio where PortfolioId='$PortfolioId'")or die(mysql_error());
             unlink("upload/PortfolioImages/".$r1['Image']);
             if($querydelete)
             {
@@ -64,8 +64,8 @@
                         <?php
                             $i=1;
                             $select="select * from tblportfolio ORDER BY PortfolioId DESC";
-                            $row=mysql_query($select,$con);
-                            while($r1=mysql_fetch_array($row))
+                            $row=mysqli_query($con,$select);
+                            while($r1=mysqli_fetch_array($row))
                             {
                         ?>
                                 <td><?php echo $i; ?></td>
@@ -97,7 +97,7 @@
                                     }
                                     ?>
                                 </td>
-                                <td><a href="edit_portfolio.php?PortfolioId=<?php echo $r1['PortfolioId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                <td><a href="edit_portfolio?PortfolioId=<?php echo $r1['PortfolioId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                 <a href="portfolio_list.php?PortfolioId=<?php echo $r1['PortfolioId']; ?>"><i class="ficon icon-bin"></i></a></td>                            
                         </tr>      
                         <?php

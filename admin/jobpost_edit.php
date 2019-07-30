@@ -3,8 +3,8 @@
    if(isset($_GET['JobPostId']))
    {
        $JobPostId=$_GET['JobPostId'];
-       $getData=mysql_query("select * from tbljobpost where JobPostId='$JobPostId'");
-       $jobData=mysql_fetch_assoc($getData);
+       $getData=mysqli_query($con,"select * from tbljobpost where JobPostId='$JobPostId'");
+       $jobData=mysqli_fetch_assoc($getData);
        $IsActive=$jobData['IsActive'];
 
        if(isset($_POST['update']))
@@ -13,13 +13,13 @@
           $JobDescription=$_POST['JobDescription'];
           $IsActive=$_POST['IsActive'];
           $updateData="update tbljobpost set JobTitle='$JobTitle',JobDescription='$JobDescription',IsActive='$IsActive' where JobPostId='$JobPostId'";
-          $result=mysql_query($updateData);
+          $result=mysqli_query($con,$updateData);
           if($result)
           {
 
 										$_SESSION['check']=3;
 										echo '<script>
-										window.location="jobpost_list.php"
+										window.location="jobpost_list"
 									 </script>';
 					}
 					 else

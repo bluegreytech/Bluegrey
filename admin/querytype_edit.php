@@ -3,8 +3,8 @@
    if(isset($_GET['QueryTypeId']))
    {
        $QueryTypeId=$_GET['QueryTypeId'];
-       $getData=mysql_query("select * from tblquerytype where QueryTypeId='$QueryTypeId'");
-       $qyeryData=mysql_fetch_assoc($getData);
+       $getData=mysqli_query($con,"select * from tblquerytype where QueryTypeId='$QueryTypeId'");
+       $qyeryData=mysqli_fetch_assoc($getData);
        $IsActive=$qyeryData['IsActive'];
 
        if(isset($_POST['update']))
@@ -12,13 +12,13 @@
           $QueryType=$_POST['QueryType'];
           $IsActive=$_POST['IsActive'];
           $updateData="update tblquerytype set QueryType='$QueryType',IsActive='$IsActive' where QueryTypeId='$QueryTypeId'";
-          $result=mysql_query($updateData);
+          $result=mysqli_query($con,$updateData);
           if($result)
           {
 
 										$_SESSION['check']=3;
 										echo '<script>
-										window.location="querytype_list.php"
+										window.location="querytype_list"
 									 </script>';
 					}
 					 else

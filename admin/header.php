@@ -63,7 +63,7 @@
             
             <ul class="nav navbar-nav float-xs-right">
               <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><i class="icon-user"></i><i></i></span><span class="user-name"><?php echo $Email?></span></a>
-                <div class="dropdown-menu dropdown-menu-right"><a href="logout.php" class="dropdown-item"><i class="icon-power3"></i> Logout</a>
+                <div class="dropdown-menu dropdown-menu-right"><a href="logout" class="dropdown-item"><i class="icon-power3"></i> Logout</a>
                 </div>
               </li>
             </ul>
@@ -88,11 +88,11 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="insert_blog.php" data-i18n="nav.dash.main" class="menu-item"><i class="icon-plus"></i> Add a Blog</a>
+                <a href="insert_blog" data-i18n="nav.dash.main" class="menu-item"><i class="icon-plus"></i> Add a Blog</a>
               </li>
               <li>
               <li>
-                <a href="blog_list.php" data-i18n="nav.dash.main" class="menu-item"><i class="icon-file-text2"></i>List of Blog </a>
+                <a href="blog_list" data-i18n="nav.dash.main" class="menu-item"><i class="icon-file-text2"></i>List of Blog </a>
               </li>
             </ul>
           </li>
@@ -102,10 +102,10 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="insert_blogimage.php" data-i18n="nav.dash.main" class="menu-item"><i class="icon-plus"></i> Add a Blog Image </a>
+                <a href="insert_blogimage" data-i18n="nav.dash.main" class="menu-item"><i class="icon-plus"></i> Add a Blog Image </a>
               </li>
               <li>
-                <a href="blogimage_list.php" data-i18n="nav.dash.main" class="menu-item"><i class="icon-file-text2"></i> List of Blog Image </a>
+                <a href="blogimage_list" data-i18n="nav.dash.main" class="menu-item"><i class="icon-file-text2"></i> List of Blog Image </a>
               </li>
             </ul>
           </li>
@@ -115,13 +115,13 @@
             </a>
             <ul class="menu-content">
             <li>
-                <a href="inquiry_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Inquiry Users</a>
+                <a href="inquiry_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Inquiry Users</a>
               </li> 
               <li>
-                <a href="career_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Applied Users</a>
+                <a href="career_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Applied Users</a>
               </li> 
               <li>
-                <a href="quoteinquiry_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Quote Inquiry</a>
+                <a href="quoteinquiry_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Quote Inquiry</a>
               </li>
             </ul>
           </li>
@@ -131,10 +131,10 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="intrestedtype_add.php" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Job Category</a>
+                <a href="intrestedtype_add" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Job Category</a>
               </li>
               <li>
-                <a href="intrestedtype_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Job Category</a>
+                <a href="intrestedtype_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Job Category</a>
               </li>
             </ul>
           </li>
@@ -144,10 +144,10 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="jobpost_add.php" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Job Post</a>
+                <a href="jobpost_add" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Job Post</a>
               </li>
               <li>
-                <a href="jobpost_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Job Post</a>
+                <a href="jobpost_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Job Post</a>
               </li>
             </ul>
           </li>
@@ -157,10 +157,10 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="insert_portfolio.php" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Portfolio</a>
+                <a href="insert_portfolio" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Portfolio</a>
               </li>
               <li>
-                <a href="portfolio_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Portfolio </a>
+                <a href="portfolio_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i>List of Portfolio </a>
               </li>
             </ul>
           </li>
@@ -170,10 +170,10 @@
             </a>
             <ul class="menu-content">
               <li>
-                <a href="querytype_add.php" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Query Type</a>
+                <a href="querytype_add" data-i18n="nav.page_layouts.1_column" class="menu-item"><i class="icon-plus"></i> Add a Query Type</a>
               </li>
               <li>
-                <a href="querytype_list.php" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Query Type</a>
+                <a href="querytype_list" data-i18n="nav.page_layouts.2_columns" class="menu-item"><i class="icon-file-text2"></i> List of Query Type</a>
               </li>
             </ul>
           </li>

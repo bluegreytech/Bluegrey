@@ -1,19 +1,20 @@
 <?php
-     include('admin/connection.php');
-         $FROMNAME=FROMNAME;
-           $USERNAME=USERNAME;
-             $USERPASSWORD=USERPASSWORD;
-             $SETFROM=SETFROM;
-            $SETTO=SETTO;
+     include('admin/connection.php');   
      if(isset($_POST['quote']))
      {
         $UserName=$_POST['UserName'];
         $EmailAddress=$_POST['EmailAddress'];
         $QueryTypeId=$_POST['QueryTypeId'];
+        $QueryType=$_POST['QueryType'];
         $MessageQuery=$_POST['MessageQuery'];
-        $result=mysql_query("insert into tblquote(UserName,EmailAddress,QueryTypeId,MessageQuery)values('$UserName','$EmailAddress','$QueryTypeId','$MessageQuery')")or die(mysql_error());
+        $result=mysqli_query($con,"insert into tblquote(UserName,EmailAddress,QueryTypeId,MessageQuery)values('$UserName','$EmailAddress','$QueryTypeId','$MessageQuery')")or die(mysql_error());
         if($result)
         {
+                $FROMNAME=FROMNAME;
+                $USERNAME=USERNAME;
+                $USERPASSWORD=USERPASSWORD;
+                $SETFROM=SETFROM;
+                $SETTO=SETTO;
                 require_once('email/class.phpmailer.php');
                 $mail = new PHPMailer(); // create a new object
                 $mail->IsSMTP(); // enable SMTP
@@ -24,34 +25,34 @@
                 $mail->Port = 465; // or 587
                 $mail->IsHTML(true);
 				
-                $mail->FromName="Bluegrey"; 
-                $mail->Username = "hiren@nilayinfotech.co.in";
-                $mail->Password = "Hiren@1234";
-                $mail->SetFrom("hiren@nilayinfotech.co.in");		
+                $mail->FromName=FROMNAME;
+                $mail->Username=USERNAME;
+                $mail->Password=USERPASSWORD;
+                $mail->SetFrom=SETFROM;			
                 $mail->Subject = "Bluegrey- Free Quote";
                 $mail->Body ="Hello, <br/><br>
                 Please find below details for user visited your site.<br><br>
                 <b>Email</b>: $EmailAddress<br/>
                 <b>Name</b>: $UserName <br/>
-                <b>Query Type</b>: $QueryTypeId<br/>
+                <b>Query Type</b>: $QueryType<br/>
                 <b>Message</b>: $MessageQuery <br/><br/>
                 Kind Regards, <br/>
                 Thank You,<br/>
                 <b>Team Bluegreytech</b> <br/>";
-                $mail->AddAddress("hiren@nilayinfotech.co.in");
+                $mail->AddAddress($SETTO);
                 
                 if(!$mail->Send())
                 {
                     $_SESSION['check']=3;
                     // echo '<script>
-                            // window.location="contact-us.php"
+                            // window.location="contact-us"
                             // </script>';
                 }
                 else
                 {
                     $_SESSION['check']=1;
 							// echo '<script>
-                            // window.location="contact-us.php"
+                            // window.location="contact-us"
                             // </script>';
                 }
 	    }
@@ -59,7 +60,7 @@
         {
             $_SESSION['check']=2;
                     // echo '<script>
-                    // window.location="contact-us.php"
+                    // window.location="contact-us"
                     // </script>';
         }	
      }
@@ -118,17 +119,18 @@ s0.parentNode.insertBefore(s1,s0);
                                                 <input type="text" class="form-control" name="UserName" maxlength="255" placeholder="Full Name" required>
                                             </div>
                                             <div class="form-group">
-                                                 <input type="email" class="form-control" name="EmailAddress" maxlength="100" required placeholder="Email Address" email="">
+                                                 <input type="email" class="form-control" name="EmailAddress" maxlength="100" required placeholder="Email Address">
                                             </div>
                                             <div class="form-group form__appearance">
-                                                <select class="form__select" name="QueryTypeId" required>
+                                                    <input type="hidden" name="QueryType" value="" id="QueryType">
+                                                <select class="form__select" name="QueryTypeId" required id="QueryTypeId">
 												<option value="">Select Query Type</option>
                                                  <?php
-												$select1=mysql_query("select * from tblquerytype where IsActive='1'");
-												while($r1=mysql_fetch_array($select1))
+												$select1=mysqli_query($con,"select * from tblquerytype where IsActive='1'");
+												while($r1=mysqli_fetch_array($select1))
 												{
 												?>
-													<option value="<?php echo $r1['QueryType'];?>"><?php echo $r1['QueryType'];?></option>                    
+													<option value="<?php echo $r1['QueryTypeId'];?>"><?php echo $r1['QueryType'];?></option>                    
 												<?php
 												}
 												?>
@@ -151,16 +153,16 @@ s0.parentNode.insertBefore(s1,s0);
 	<nav class="nav ">
 		<div class="container">
 			<div class="nav__logo">
-				<a class="logo logo-white" href="index.php"></a>
+				<a class="logo logo-white" href="index"></a>
             </div>
 	<div class="nav__wrapper">
 				
     <ul class="nav__list">
         <li class="menu-item">
-                <a href="index.php" class="menu-item-link">Home</a>
+                <a href="index" class="menu-item-link">Home</a>
             </li>
             <li class="menu-item has-dropdown">
-                <a href="#" class="menu-item-link">Services</a>
+                <a href="#" class="menu-item-link">What We Do</a>
                 <div class="sub-menu-wrapper">
                     <div class="sub-menu-container">
                         <div class="article-container">
@@ -188,16 +190,16 @@ s0.parentNode.insertBefore(s1,s0);
                                             <div class="sub-menu__list-wrapper">
                                                     <ul class="sub-menu__list">
                                                         <li class="sub-menu__list-item">
-                                                            <a href="web-development.php" class="sub-item-link sub-item-link--list">Web Development</a>
+                                                            <a href="web-development" class="sub-item-link sub-item-link--list">Web Development</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="web-design.php" class="sub-item-link sub-item-link--list">Web Design</a>
+                                                            <a href="web-design" class="sub-item-link sub-item-link--list">Web Design</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="digital-marketing.php" class="sub-item-link sub-item-link--list">Digital Marketing</a>
+                                                            <a href="digital-marketing" class="sub-item-link sub-item-link--list">Digital Marketing</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="mobile-application.php" class="sub-item-link sub-item-link--list">Mobile Application</a>
+                                                            <a href="mobile-application" class="sub-item-link sub-item-link--list">Mobile Application</a>
                                                         </li>
                                                     </ul>
                                             </div>
@@ -211,22 +213,22 @@ s0.parentNode.insertBefore(s1,s0);
                                             <div class="sub-menu__list-wrapper">
                                                     <ul class="sub-menu__list">
                                                         <li class="sub-menu__list-item">
-                                                            <a href="msp-services.php" class="sub-item-link sub-item-link--list">MSP Services</a>
+                                                            <a href="msp-services" class="sub-item-link sub-item-link--list">MSP Services</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="workstations-and-point-of-sale-systems.php" class="sub-item-link sub-item-link--list">Workstation & POS Systems</a>
+                                                            <a href="workstations-and-point-of-sale-systems" class="sub-item-link sub-item-link--list">Workstation & POS Systems</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="employee-productivity.php" class="sub-item-link sub-item-link--list">Employee Productivity</a>
+                                                            <a href="employee-productivity" class="sub-item-link sub-item-link--list">Employee Productivity</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="security-and-monitoring.php" class="sub-item-link sub-item-link--list">Security & Monitoring</a>
+                                                            <a href="security-and-monitoring" class="sub-item-link sub-item-link--list">Security & Monitoring</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="network-infrastructure.php" class="sub-item-link sub-item-link--list">Network Infrastructure</a>
+                                                            <a href="network-infrastructure" class="sub-item-link sub-item-link--list">Network Infrastructure</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="data-protection-and-migration.php" class="sub-item-link sub-item-link--list">Data Protection & Migration</a>
+                                                            <a href="data-protection-and-migration" class="sub-item-link sub-item-link--list">Data Protection & Migration</a>
                                                         </li>
                                                     </ul>
                                             </div>
@@ -240,13 +242,13 @@ s0.parentNode.insertBefore(s1,s0);
                                             <div class="sub-menu__list-wrapper">
                                                     <ul class="sub-menu__list">
                                                         <li class="sub-menu__list-item">
-                                                            <a href="inbound-call-center-services.php" class="sub-item-link sub-item-link--list">Inbound</a>
+                                                            <a href="inbound-call-center-services" class="sub-item-link sub-item-link--list">Inbound</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="outbound-call-center.php" class="sub-item-link sub-item-link--list">Outbound</a>
+                                                            <a href="outbound-call-center" class="sub-item-link sub-item-link--list">Outbound</a>
                                                         </li>
                                                         <li class="sub-menu__list-item">
-                                                            <a href="live-chat.php" class="sub-item-link sub-item-link--list"> Live Chat</a>
+                                                            <a href="live-chat" class="sub-item-link sub-item-link--list"> Live Chat</a>
                                                         </li>
                                                     </ul>
                                             </div>
@@ -259,16 +261,16 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
             </li>
             <li class="menu-item">
-                <a href="industries.php" class="menu-item-link">Industry</a>
+                <a href="industries" class="menu-item-link">What We Serve</a>
             </li>
             <li class="menu-item">
-                <a href="blog.php" class="menu-item-link">BLog</a>
+                <a href="blog" class="menu-item-link">Blog</a>
             </li>
             <li class="menu-item">
-                <a href="portfolio.php" class="menu-item-link">Portfolio</a>
+                <a href="portfolio" class="menu-item-link">Portfolio</a>
             </li>
             <li class="menu-item has-dropdown">
-                <a href="#" class="menu-item-link">Company</a>
+                <a href="#" class="menu-item-link">Who We Are</a>
                 <div class="sub-menu-wrapper">
                     <div class="sub-menu-container">
                         <div class="article-container">
@@ -287,35 +289,35 @@ s0.parentNode.insertBefore(s1,s0);
                             <ul class="sub-menu">
                                 <div class="sub-menu__wrapper">
                                         <li class="menu-item">
-                                            <a href="about.php#heroAbout"  data-image="img/menu-items/1.jpg"
+                                            <a href="about#heroAbout"  data-image="img/menu-items/1.jpg"
                                                data-descr=""
                                                data-link="img/menu-items/1.jpg" data-alt="Our Сlients Image" class="sub-item-link">
                                                 About </i>
                                             </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="about.php#mission"  data-image="img/menu-items/1.jpg"
+                                            <a href="about#mission"  data-image="img/menu-items/1.jpg"
                                                data-descr=""
                                                data-link="img/menu-items/1.jpg" data-alt="Our Сlients Image" class="sub-item-link">
                                                 Our Mission </i>
                                             </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="about.php#vision"  data-image="img/menu-items/1.jpg"
+                                            <a href="about#vision"  data-image="img/menu-items/1.jpg"
                                                data-descr=""
                                                data-link="img/menu-items/1.jpg" data-alt="Our Сlients Image" class="sub-item-link">
                                                 Our Vision</i>
                                             </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="about.php#wedo"  data-image="img/menu-items/1.jpg"
+                                            <a href="about#wedo"  data-image="img/menu-items/1.jpg"
                                                data-descr=""
                                                data-link="img/menu-items/1.jpg" data-alt="Our Сlients Image" class="sub-item-link">
                                                 What We Do</i>
                                             </a>
                                         </li>
                                         <li class="menu-item">
-                                            <a href="career.php"  data-image="img/menu-items/1.jpg"
+                                            <a href="career"  data-image="img/menu-items/1.jpg"
                                                data-descr=""
                                                data-link="img/menu-items/1.jpg" data-alt="Our Сlients Image" class="sub-item-link">
                                                 Career</i>
@@ -332,7 +334,15 @@ s0.parentNode.insertBefore(s1,s0);
             </ul>			
             </div>
 			<div class="nav__btn">
-				<a class="get-touch btn" href="contact-us.php">Contact Us</a><a id="c-button--push-left" href="#" class="sandwich menu-btn"></a>
+				<a class="get-touch btn" href="contact-us">Contact Us</a><a id="c-button--push-left" href="#" class="sandwich menu-btn"></a>
 			</div>
 		</div>
 	</nav>
+    <script src="js/jquery.min6b47.js?v=1463765083"></script>
+<script>
+$('#QueryTypeId').change(function(){ 
+    var id = $(this).val();
+    var querytypetext = $('option:selected', this).text();
+    $('#QueryType').val(querytypetext);
+});
+</script>

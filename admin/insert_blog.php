@@ -12,14 +12,14 @@
         $path="upload/BlogImages/$BlogImage";
         move_uploaded_file($p1,$path);
         $IsActive=$_POST['IsActive'];
-		$result=mysql_query("insert into tblblogs(MetaTitle,MetaDescription,BlogTitle,BlogDescription,BlogImage,IsActive)values('$MetaTitle','$MetaDescription','$BlogTitle','$BlogDescription','$BlogImage','$IsActive')");
+		$result=mysqli_query($con,"insert into tblblogs(MetaTitle,MetaDescription,BlogTitle,BlogDescription,BlogImage,IsActive)values('$MetaTitle','$MetaDescription','$BlogTitle','$BlogDescription','$BlogImage','$IsActive')");
 		// $result="insert into tblblogs(MetaTitle,MetaDescription,BlogTitle,BlogDescription,BlogImage,IsActive)values('$MetaTitle','$MetaDescription','$BlogTitle','$BlogDescription','$BlogImage','$IsActive')";
 		// var_dump($result);exit;
         if($result)
         {
 							$_SESSION['check']=1;
 							echo '<script>
-							 			 window.location="blog_list.php"
+							 			 window.location="blog_list"
 										 </script>';
 				}
 				else

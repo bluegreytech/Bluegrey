@@ -47,8 +47,8 @@
                                 $select="SELECT tb.QuoteId,tb.UserName,tb.EmailAddress,tb.QueryTypeId,tb.MessageQuery,t2.QueryType FROM tblquote as tb 
                                 JOIN tblquerytype t2 ON tb.QueryTypeId = t2.QueryTypeId 
                                 ORDER BY QuoteId DESC";
-                                $row=mysql_query($select,$con);
-                                while($r1=mysql_fetch_array($row))
+                                $row=mysqli_query($con,$select);
+                                while($r1=mysqli_fetch_array($row))
                                 {
                             ?>
                                     <td><?php echo $i; ?></td>

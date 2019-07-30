@@ -4,12 +4,12 @@
     {
         $IntrestedType=$_POST['IntrestedType'];
         $IsActive=$_POST['IsActive'];
-        $result=mysql_query("insert into tblintrestedtype(IntrestedType,IsActive)values('$IntrestedType','$IsActive')");
+        $result=mysqli_query($con,"insert into tblintrestedtype(IntrestedType,IsActive)values('$IntrestedType','$IsActive')");
         if($result)
         {
 							$_SESSION['check']=1;
 							echo '<script>
-							 			 window.location="intrestedtype_list.php"
+							 			 window.location="intrestedtype_list"
 										 </script>';
 				}
 				else

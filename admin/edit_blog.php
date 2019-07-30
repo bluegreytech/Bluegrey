@@ -3,8 +3,8 @@
    if(isset($_GET['BlogId']))
    {
        $BlogId=$_GET['BlogId'];
-       $getData=mysql_query("select * from tblblogs where BlogId='$BlogId'");
-       $blogData=mysql_fetch_assoc($getData);
+       $getData=mysqli_query($con,"select * from tblblogs where BlogId='$BlogId'");
+       $blogData=mysqli_fetch_assoc($getData);
        $BlogImage=$blogData['BlogImage'];
        $IsActive=$blogData['IsActive'];
 
@@ -35,13 +35,13 @@
            {
                 $updateData="update tblblogs set MetaTitle='$MetaTitle',MetaDescription='$MetaDescription',BlogTitle='$BlogTitle',BlogDescription='$BlogDescription',IsActive='$IsActive' where BlogId='$BlogId'";
            }
-           $result=mysql_query($updateData);
+           $result=mysqli_query($con,$updateData);
            if($result)
            {
 
 										$_SESSION['check']=3;
 										echo '<script>
-										window.location="blog_list.php"
+										window.location="blog_list"
 									 </script>';
 					 }
 					 else

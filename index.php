@@ -52,7 +52,7 @@
                     From building a website from scratch to generating traction in web traffic, our dedicated team of developers is always prepared to offer the most effective web development solutions pertaining to your needs.
                
                 </p>
-                <a href="web-design.php" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
+                <a href="web-design" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
             </div>
         </div>
         <div class="hero-slider__item hero-slider__item--2">
@@ -63,7 +63,7 @@
                    When the entire world is almost always on their phone, why shouldn't you be too? We provide the most innovative Mobile app development solutions for a convenient business experience for your customers across all major platforms i.e. iOS, Android, Windows, etc.
             
                 </p>
-                <a href="mobile-application.php" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
+                <a href="mobile-application" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
             </div>
         </div>
         <div class="hero-slider__item hero-slider__item--3">
@@ -73,7 +73,7 @@
                     With a finger firmly placed on the throbbing vein of evolving technological trends, our Digital Marketing Team offers highly effective solutions and covers a wide range of marketing activities including Social Media Management, Email Solutions, SEO Support, PPC, Google Analytics etc. 
                
                 </p>
-                <a href="digital-marketing.php" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
+                <a href="digital-marketing" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
             </div>
         </div>
         <div class="hero-slider__item hero-slider__item--4">
@@ -82,7 +82,7 @@
                 <p class="hero-slider__lead white-text lead-text">
                     We do what we do best and provide total IT solutions giving you complete peace of mind so that your full focus can be on what you do best knowing all of your IT needs are taken care of 24/7.           
                 </p>
-                <a href="it-services.php" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
+                <a href="it-services" class="button button--clear button--white">Read more <i class="isoi-angle-right"></i></a>
             </div>
         </div>
         
@@ -103,7 +103,7 @@
 			
 		</div>
                 <div class="column column--flex-center p-top-40 pb-20">
-                    <a href="contact-us.php" class="button button--clear button--blue">Talk to our team<i class="isoi-angle-right"></i></a>
+                    <a href="contact-us" class="button button--clear button--blue">Talk to our team<i class="isoi-angle-right"></i></a>
                 </div>
                     	</div>
 </section>
@@ -134,7 +134,7 @@
                         <p class="offer-content-description">
                             MSP solutions enable you to deliver high quality, secure services and automate your most frequent IT tasks.                         
                         </p>
-						<a href="msp-services.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+						<a href="msp-services" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                         
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <p class="offer-content-description">
                         POS (Point of sale) solutions for a seamless experience where your stores and customers meet. 
                         </p>
-						<a href="workstations-and-point-of-sale-systems.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+						<a href="workstations-and-point-of-sale-systems" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -154,7 +154,7 @@
                         <h3 class="offer-content-title">Employee productivity </h3>
                         <p class="offer-content-description">
                             We help you assess your company as well as develop effective programs for promoting improvements.                    </p>
-							<a href="employee-productivity.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+							<a href="employee-productivity" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -162,7 +162,7 @@
                     <div class="offer-content">
                         <h3 class="offer-content-title">Security & Monitoring</h3>
                         <p class="offer-content-description">Thwart all threats and control your organization’s security with state of the art security solutions. </p>
-						<a href="security-and-monitoring.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+						<a href="security-and-monitoring" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -171,7 +171,7 @@
                         <h3 class="offer-content-title">Network Infrastructure</h3>
                         <p class="offer-content-description">
                             Need help setting up your IT Network? Our experienced team is here to help!</p>
-							<a href="network-infrastructure.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+							<a href="network-infrastructure" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -181,7 +181,7 @@
                         <p class="offer-content-description">
                           Our services give you the freedom to protect stored, static and moving data on the cloud.
                         </p>
-						<a href="data-protection-and-migration.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+						<a href="data-protection-and-migration" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                                       <h3 class="clients__title">Web Development</h3>
                                       
                                       <p class="clients__description">Our Team of developers is always prepared to assist our clients to choose the correct platform for their business based on their business goals. </p>
-                                      <a href="web-development.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="web-development" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -218,7 +218,7 @@
                                       <h3 class="clients__title">Web Design</h3>
                                       
                                       <p class="clients__description">Aesthetic designs that attract the viewers attention are our forte. Our talented Design Team create the most eye-catching and soothing designs that amplify the nature of your brand.</p>
-                                      <a href="web-design.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="web-design" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -233,7 +233,7 @@
                                       <h3 class="clients__title">Mobile App Development</h3>
                                       
                                       <p class="clients__description">We provide innovative Mobile App development solutions for a better user experience for your customers. We offer our services on all major platforms including iOS, Android, Windows, etc.  </p>
-                                      <a href="mobile-application.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="mobile-application" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -250,7 +250,7 @@
                                       <p class="clients__description">Our Digital Marketing team cover a wide range of marketing activities, such as social media, email, SEO, PPC and mobile apps. 
 
                                       </p>
-                                      <a href="digital-marketing.php" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
+                                      <a href="digital-marketing" class="clients__link--more">view more<i class="isoi-angle-right"></i></a>
                                   </div>
                             </div>
                           </div>
@@ -267,7 +267,7 @@
                         <p class="offer-content-description">
                             We provide inbound call center services across the globe to customers in varied industries such as hospitality, real estate, airlines, travel and banking.                        
                         </p>
-                        <a href="inbound-call-center-services.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+                        <a href="inbound-call-center-services" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -277,7 +277,7 @@
                         <p class="offer-content-description">
                         Our outbound services will ensure successful sales calls, follow-ups on leads, proactive customer service and other marketing with the highest levels of integrity.
                         </p>
-						<a href="outbound-call-center.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+						<a href="outbound-call-center" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -286,7 +286,7 @@
                         <h3 class="offer-content-title">Live Chat</h3>
                         <p class="offer-content-description">
                             Live chat can help organizations to reduce their cost dramatically and increase connectivity with their customers more efficiently.      </p>
-							<a href="live-chat.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+							<a href="live-chat" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -309,13 +309,13 @@
             <?php
                 $select="SELECT * from tblblogs where IsActive='1' ORDER BY BlogId DESC LIMIT 3";
               
-                $row=mysql_query($select,$con);
-                while($r1=mysql_fetch_array($row))
+                $row=mysqli_query($con,$select);
+                while($r1=mysqli_fetch_array($row))
                 {
             ?>
                             <!--Blog 1-->
                             <div class="blog_item">
-                            <a href="blog-detail.php?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>" target="_blank">
+                            <a href="blog-detail?BlogTitle=<?php echo str_replace(' ', '-',$r1['BlogTitle'])?>" target="_blank">
                                     <div class="bi_img">
                                     <img src="admin/upload/BlogImages/<?php echo $r1['BlogImage']; ?>" alt="<?php echo $r1['BlogTitle']?>">
                                     </div>
@@ -339,7 +339,7 @@
                       ?>
                         </div>
                          <div class="column column--flex-center p-top-40 pb-20">
-                    <a href="blog.php" class="button button--clear button--blue">See All Blogs<i class="isoi-angle-right"></i></a>
+                    <a href="blog" class="button button--clear button--blue">See All Blogs<i class="isoi-angle-right"></i></a>
                 </div>
                     </div>
                 </div>

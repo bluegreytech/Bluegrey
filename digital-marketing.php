@@ -53,7 +53,7 @@
         <div class="phone__content">
             <div class="phone__column">
                 <h1 class="phone__title h2">Digital Marketing Agency Services </h1>
-                <p >We are a Professional Digital Marketing Company which can help you achieve your goals and reach out to the right people with the right message at right time through a right channel. Bluegrey Technologies have been helping clients attain their business objectives by identifying their audiences, creating the right content and making a mark on social media.</p>
+                <p >We are a Professional <a style ='color:#555;' href='http://www.iperidigi.com/in/chennai/digital-marketing-company-in-chennai/'>Digital Marketing Company</a> which can help you achieve your goals and reach out to the right people with the right message at right time through a right channel. Bluegrey Technologies have been helping clients attain their business objectives by identifying their audiences, creating the right content and making a mark on social media.</p>
 				         <p >We are a full service Digital, SEO & Social Media Marketing company aiming to help boost our clients' online presence using digital media strategies, insights, and communication solutions. Why is SEO beneficial for your business?</p>
 
                                 <ul class="phone__list">
@@ -66,7 +66,7 @@
                                     </ul>
                             </div>
             <div class="phone__column phone__column--height">
-                <div class="phone__image" style="background-image:url(img/digital-marketing.png)"alt="professional services digital marketing"> </div>
+                <div class="phone__image" style="background-image:url(img/digital.png)"alt="professional services digital marketing"> </div>
             </div>
         </div>
     </div>
@@ -124,7 +124,7 @@
             <h2 class="teach-title">
                 Our Digital Marketing Specialized Services
             </h2>
-            <p class="teach-description">Bluegrey Technologies is a leading Digital Marketing Services Company and follows the motto of offering digital excellence to all our domains. Our marketing professionals' sole aim is to help grow your business online and make you a global brand on the internet.</p>
+            <p class="teach-description">Bluegrey Technologies is a leading <a style ='color:#555;' href='http://www.iperidigi.com/in/chennai/digital-marketing-company-in-chennai/'>Digital Marketing Services Company</a> and follows the motto of offering digital excellence to all our domains. Our marketing professionals' sole aim is to help grow your business online and make you a global brand on the internet.</p>
             <ul class="teach-items">
                 <li class="teach-item active">
                     <div class="preview">
@@ -183,7 +183,7 @@
                     </div>
                     <div class="more-info">
                         <h3 class="item-title">Content Marketing</h3>
-                        <p class="item-description">We devise content that is user-friendly, observes SEO guidelines and gives complete clarity of your goods and services. </p>
+                        <p class="item-description">Our <a style ='color:#555;' href='http://www.iperidigi.com/in/chennai/digital-marketing-company-in-chennai/'>Digital Marketing Agency</a> devise content that is user-friendly, observes SEO guidelines and gives complete clarity of your goods and services. </p>
                     </div>
                 </li>
             </ul>
@@ -358,4 +358,4 @@
         </div>
     </section>
     
-<?php include 'footer.php';?>
+<?php include 'footer.php';?>        

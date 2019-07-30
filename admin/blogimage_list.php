@@ -5,23 +5,23 @@
     if(isset($_GET['ImageblogId']))
     {
         $ImageblogId=$_GET['ImageblogId'];
-        $queryselect=mysql_query("select * from tblblogimage where ImageblogId='$ImageblogId'")or die(mysql_error());
-        $r1=mysql_fetch_array($queryselect);
+        $queryselect=mysqli_query($con,"select * from tblblogimage where ImageblogId='$ImageblogId'")or die(mysql_error());
+        $r1=mysqli_fetch_array($queryselect);
         $Image=$r1['Image'];
-        $querydelete=mysql_query("delete from tblblogimage where ImageblogId='$ImageblogId'")or die(mysql_error());
+        $querydelete=mysqli_query($con,"delete from tblblogimage where ImageblogId='$ImageblogId'")or die(mysql_error());
         unlink("upload/BlogImages/".$r1['Image']);	
        if($querydelete)
        {
             $_SESSION['check']=2;    
             echo '<script>
-            window.location="blogimage_list.php"
+            window.location="blogimage_list"
            </script>';         
        }
        else
         {
             $_SESSION['check']=4;
             echo '<script>
-            window.location="blogimage_list.php"
+            window.location="blogimage_list"
            </script>';   
         }	
     }
@@ -71,8 +71,8 @@
                             $i=1;
                             $select="SELECT tb.ImageblogId,tb.BlogId,tb.Image,tb.IsActive,tl.BlogTitle FROM tblblogimage as tb 
                             JOIN tblblogs tl ON tb.BlogId = tl.BlogId ORDER BY ImageblogId DESC";
-                            $row=mysql_query($select,$con);
-                            while($r1=mysql_fetch_array($row))
+                            $row=mysqli_query($con,$select);
+                            while($r1=mysqli_fetch_array($row))
                             {
                         ?>
                                 <td><?php echo $i; ?></td>
@@ -104,7 +104,7 @@
                                     }
                                     ?>
                                 </td>
-                                <td><a href="edit_blogimage.php?ImageblogId=<?php echo $r1['ImageblogId']; ?>"><i class="ficon icon-pencil2"></i></a>
+                                <td><a href="edit_blogimage?ImageblogId=<?php echo $r1['ImageblogId']; ?>"><i class="ficon icon-pencil2"></i></a>
                                 <a href="blogimage_list.php?ImageblogId=<?php echo $r1['ImageblogId']; ?>"><i class="ficon icon-bin"></i></a></td>
                 
                         </tr>      

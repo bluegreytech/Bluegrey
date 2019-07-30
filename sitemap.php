@@ -74,27 +74,27 @@
 		
         
              <ul class="sitemap-li" style="padding-left: 26px;">
-			<li><a href="index.php">Home</a></li>
+			<li><a href="index">Home</a></li>
 		
 	
 			
 	        <li><strong><a href="#">Web Services		</a></strong>
 		        <ul class="sublist">
-				<li><a href="web-development.php">Web Devlopment Services</a></li> 
-				<li><a href="web-design.php">Web Design Services</a></li>   
-				<li><a href="digital-marketing.php">Digital Marketing Services</a></li>   
-				<li><a href="mobile-application.php">Mobile Application</a></li> 
+				<li><a href="web-development">Web Devlopment Services</a></li> 
+				<li><a href="web-design">Web Design Services</a></li>   
+				<li><a href="digital-marketing">Digital Marketing Services</a></li>   
+				<li><a href="mobile-application">Mobile Application</a></li> 
 				</ul> 
 			</li>
 
 			<li><strong><a href="#">IT Services	</a></strong>
 				<ul class="sublist">
-				<li><a href="msp-services.php">MSP Services</a></li>   
-				<li><a href="workstations-and-point-of-sale-systems.php">Workstations and POS</a></li>   
-				<li><a href="employee-productivity.php">Employee Productivity</a></li>   
-				<li><a href="security-and-monitoring.php">Security and Monitoring</a></li>  
-				<li><a href="network-infrastructure.php">Network Infrastructure</a></li>
-				<li><a href="data-protection-and-migration.php">Data Protection and Migration</a></li>
+				<li><a href="msp-services">MSP Services</a></li>   
+				<li><a href="workstations-and-point-of-sale-systems">Workstations and POS</a></li>   
+				<li><a href="employee-productivity">Employee Productivity</a></li>   
+				<li><a href="security-and-monitoring">Security and Monitoring</a></li>  
+				<li><a href="network-infrastructure">Network Infrastructure</a></li>
+				<li><a href="data-protection-and-migration">Data Protection and Migration</a></li>
 				</ul>
 			</li>
 
@@ -102,29 +102,29 @@
 			
 			<li><strong><a href="#">Call Center Services	</a></strong>
 				<ul class="sublist">
-				<li><a href="inbound-call-center-services.php">Inbound Call Center Services</a></li>		
-				<li><a href="outbound-call-center.php">Outbound Call Center</a></li>
-				<li><a href="live-chat.php">Live Chat</a></li>
+				<li><a href="inbound-call-center-services">Inbound Call Center Services</a></li>		
+				<li><a href="outbound-call-center">Outbound Call Center</a></li>
+				<li><a href="live-chat">Live Chat</a></li>
 				</ul>
 			</li>
 			
 			
 			<li><strong><a href="#">Pages</a></strong>
 				<ul class="sublist">
-				<li><a href="industries.php">Industries</a></li>
-				<li><a href="portfolio.php">Portfolio</a></li>
-				<li><a href="career.php">Career</a></li>
-				<li><a href="contact-us.php">Contact Us</a></li>
-				<li><a href="about.php">About Us</a></li>  
+				<li><a href="industries">Industries</a></li>
+				<li><a href="portfolio">Portfolio</a></li>
+				<li><a href="career">Career</a></li>
+				<li><a href="contact-us">Contact Us</a></li>
+				<li><a href="about">About Us</a></li>  
 				</ul>
 			</li>
 			
 						
-			<li><strong><a href="blog.php">Blog</a></strong>
+			<li><strong><a href="blog">Blog</a></strong>
 				<ul class="sublist">
-				<li><a href="blog-detail.php?BlogTitle=6-Latest-Digital-Marketing-Trends-in-2019">6 Latest Digital Marketing Trends in 2019</a></li>
-				<li><a href="blog-detail.php?BlogTitle=Important-Elements-for-Designing-a-Website">Important Elements for Designing a Website</a></li>
-				<li><a href="blog-detail.php?BlogTitle=Tips-to-Choose-the-Best-Website-Development-Company">Tips to Choose the Best Website Development Company</a></li>
+				<li><a href="blog-detail?BlogTitle=6-Latest-Digital-Marketing-Trends-in-2019">6 Latest Digital Marketing Trends in 2019</a></li>
+				<li><a href="blog-detail?BlogTitle=Important-Elements-for-Designing-a-Website">Important Elements for Designing a Website</a></li>
+				<li><a href="blog-detail?BlogTitle=Tips-to-Choose-the-Best-Website-Development-Company">Tips to Choose the Best Website Development Company</a></li>
 			
 				</ul>
 			</li>

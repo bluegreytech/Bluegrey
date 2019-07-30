@@ -3,8 +3,8 @@
    if(isset($_GET['IntrestedTypeId']))
    {
        $IntrestedTypeId=$_GET['IntrestedTypeId'];
-       $getData=mysql_query("select * from tblintrestedtype where IntrestedTypeId='$IntrestedTypeId'");
-       $intrestedData=mysql_fetch_assoc($getData);
+       $getData=mysqli_query($con,"select * from tblintrestedtype where IntrestedTypeId='$IntrestedTypeId'");
+       $intrestedData=mysqli_fetch_assoc($getData);
        $IsActive=$intrestedData['IsActive'];
 
        if(isset($_POST['update']))
@@ -12,13 +12,13 @@
           $IntrestedType=$_POST['IntrestedType'];
           $IsActive=$_POST['IsActive'];
           $updateData="update tblintrestedtype set IntrestedType='$IntrestedType',IsActive='$IsActive' where IntrestedTypeId='$IntrestedTypeId'";
-          $result=mysql_query($updateData);
+          $result=mysqli_query($con,$updateData);
           if($result)
           {
 
 										$_SESSION['check']=3;
 										echo '<script>
-										window.location="intrestedtype_list.php"
+										window.location="intrestedtype_list"
 									 </script>';
 					}
 					 else

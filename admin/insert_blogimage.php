@@ -10,12 +10,12 @@
         move_uploaded_file($p1,$path);
         $IsActive=$_POST['IsActive'];
 
-        $result=mysql_query("insert into tblblogimage(BlogId,Image,IsActive)values('$BlogId','$Image','$IsActive')");
+        $result=mysqli_query($con,"insert into tblblogimage(BlogId,Image,IsActive)values('$BlogId','$Image','$IsActive')");
         if($result)
         {
 					$_SESSION['check']=1;
 						echo '<script>
-						window.location="blogimage_list.php"
+						window.location="blogimage_list"
 					</script>';   
 				}
 				else
@@ -63,8 +63,8 @@
 									<select id="issueinput5" name="BlogId" required class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Blog Category" data-original-title="" title="">
 											<option value="-1">Select Title</option>
 											<?php
-													$select1=mysql_query("select * from tblblogs ORDER BY BlogTitle ASC");
-													while($r1=mysql_fetch_array($select1))
+													$select1=mysqli_query($con,"select * from tblblogs ORDER BY BlogTitle ASC");
+													while($r1=mysqli_fetch_array($select1))
 													{
 													?>
 															<option value="<?php echo $r1['BlogId'];?>"><?php echo $r1['BlogTitle'];?></option>					

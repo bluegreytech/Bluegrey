@@ -56,19 +56,14 @@
         $LastName=$_POST['LastName'];
         $EmailAddress=$_POST['EmailAddress'];				
         $MobileNumber=$_POST['MobileNumber'];
-       // $CountryName=$_POST['CountryName'];
+        $CountryName=$_POST['CountryName'];
         $CountryId=$_POST['CountryId'];
         $IntrestedTypeId=$_POST['IntrestedTypeId'];
-      //  $IntrestedType=$_POST['IntrestedType'];
+        $IntrestedType=$_POST['IntrestedType'];
         $DescriptionMessage=$_POST['DescriptionMessage'];
-       // echo "<pre>";print_r($_POST); die;
-        
-        $result=mysql_query("insert into tblinquiry(FirstName,LastName,EmailAddress,MobileNumber,CountryId,IntrestedTypeId,DescriptionMessage)values('$FirstName','$LastName','$EmailAddress','$MobileNumber','$CountryId','$IntrestedTypeId','$DescriptionMessage')");
-         //var_dump($result);
-        // exit;
+        $result=mysqli_query($con,"insert into tblinquiry(FirstName,LastName,EmailAddress,MobileNumber,CountryId,IntrestedTypeId,DescriptionMessage)values('$FirstName','$LastName','$EmailAddress','$MobileNumber','$CountryId','$IntrestedTypeId','$DescriptionMessage')");
         if($result)
-        {
-             
+        { 
                 require_once('email/class.phpmailer.php');
                 $mail = new PHPMailer(); // create a new object
                 $mail->IsSMTP(); // enable SMTP
@@ -89,14 +84,14 @@
                 <b>Email</b>: $EmailAddress<br/>
                 <b>Name</b>: $FirstName $LastName<br/>
                 <b>Contact Number</b>: $MobileNumber<br/>
-				<b>Country</b>: $CountryId<br/>
-				<b>Intrested In</b>: $IntrestedTypeId<br/>
+				<b>Country</b>: $CountryName<br/>
+				<b>Intrested In</b>: $IntrestedType<br/>
                 <b>Message</b>: $DescriptionMessage <br/><br/>
                 Kind Regards, <br/>
                 Thank You,<br/>
                 <b>Team Bluegreytech </b> <br/>";
              				
-                $mail->AddAddress("mitnp16@gmail.com");
+                $mail->AddAddress($SETTO);
                 if(!$mail->Send())
                 {
                     $_SESSION['check']=3;
@@ -174,8 +169,8 @@
                         <select class="form__select" name="CountryId" required id="CountryId">
                             <option value="">Country</option>
                             <?php
-                            $select1=mysql_query("select * from tblcountry where IsActive='1'");
-                            while($r1=mysql_fetch_array($select1))
+                            $select1=mysqli_query($con,"select * from tblcountry where IsActive='1'");
+                            while($r1=mysqli_fetch_array($select1))
                             {
                             ?>                          
                             <option value="<?php echo $r1['CountryId'];?>"><?php echo $r1['CountryName'];?></option>					
@@ -189,8 +184,8 @@
                         <select class="form__select" name="IntrestedTypeId" required id="IntrestedTypeId">
                             <option value="">I am interested in</option>
                             <?php
-                            $select1=mysql_query("select * from tblintrestedtype where IsActive='1'");
-                            while($r1=mysql_fetch_array($select1))
+                            $select1=mysqli_query($con,"select * from tblintrestedtype where IsActive='1'");
+                            while($r1=mysqli_fetch_array($select1))
                             {
                             ?>                             
                             <option value="<?php echo $r1['IntrestedTypeId'];?>"><?php echo $r1['IntrestedType'];?>                      </option>					

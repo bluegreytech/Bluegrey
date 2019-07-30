@@ -70,7 +70,7 @@
                         <p class="offer-content-description">
                             We provide inbound call center services across the globe to customers in varied industries such as hospitality, real estate, airlines, travel and banking.                        
                         </p>
-                        <a href="inbound-call-center-services.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+                        <a href="inbound-call-center-services" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -80,7 +80,7 @@
                         <p class="offer-content-description">
                         Our outbound services will ensure successful sales calls, follow-ups on leads, proactive customer service and other marketing with the highest levels of integrity.
                         </p>
-                        <a href="outbound-call-center.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+                        <a href="outbound-call-center" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="tabcontent-item">
@@ -89,7 +89,7 @@
                         <h3 class="offer-content-title">Live Chat</h3>
                         <p class="offer-content-description">
                             Live chat can help organizations to reduce their cost dramatically and increase connectivity with their customers more efficiently.      </p>
-                            <a href="live-chat.php" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
+                            <a href="live-chat" class="offer-content-link-more">view more<i class="isoi-angle-right"></i></a>
                     </div>
                 </div>
             </div>

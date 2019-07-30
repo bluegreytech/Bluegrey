@@ -3,9 +3,9 @@
 	if(isset($_GET['ImageblogId']))
 	{
 			$ImageblogId=$_GET['ImageblogId'];
-			$getData=mysql_query("SELECT tb.ImageblogId,tb.BlogId,tb.Image,tb.IsActive,tl.BlogTitle FROM tblblogimage as tb 
+			$getData=mysqli_query($con,"SELECT tb.ImageblogId,tb.BlogId,tb.Image,tb.IsActive,tl.BlogTitle FROM tblblogimage as tb 
 			JOIN tblblogs tl ON tb.BlogId = tl.BlogId WHERE ImageblogId='$ImageblogId'");
-			$imageData=mysql_fetch_assoc($getData);
+			$imageData=mysqli_fetch_assoc($getData);
 			$BlogId=$imageData['BlogId'];
 			$BlogTitle=$imageData['BlogTitle'];
 			$Image=$imageData['Image'];
@@ -35,7 +35,7 @@
 					{
 								$_SESSION['check']=3;
 								echo '<script>
-								window.location="blogimage_list.php"
+								window.location="blogimage_list"
 								</script>'; 
 					}
 					else
@@ -85,8 +85,8 @@
 									<select id="issueinput5" required name="BlogId" class="form-control" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Blog Category" data-original-title="" title="">
 														<option value="<?php echo $BlogId; ?>"><?php echo $BlogTitle ?></option>
 											<?php
-													$select1=mysql_query("select * from tblblogs");
-													while($r1=mysql_fetch_array($select1))
+													$select1=mysqli_query($con,"select * from tblblogs");
+													while($r1=mysqli_fetch_array($select1))
 													{
 													?>
 															<option value="<?php echo $r1['BlogId'];?>"><?php echo $r1['BlogTitle'];?></option>					

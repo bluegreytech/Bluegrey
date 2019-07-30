@@ -5,13 +5,13 @@
     {
         $UserName=$_POST['UserName'];
         $Password=$_POST['Password'];
-        $select=mysql_query("select * from tbladmin where BINARY  UserName='$UserName' AND Password='$Password'");
-        $result=mysql_fetch_assoc($select);
-        $count=mysql_num_rows($select);
+        $select=mysqli_query($con,"select * from tbladmin where BINARY  UserName='$UserName' AND Password='$Password'");
+        $result=mysqli_fetch_assoc($select);
+        $count=mysqli_num_rows($select);
         if($count > 0)
         {
             $_SESSION['UserName']=$UserName;
-            header('location:insert_blog.php');
+            header('location:insert_blog');
         }
         else
         {
